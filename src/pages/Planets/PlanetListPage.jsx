@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Link, useSearchParams } from 'react-router-dom';
 import { getPageNoFromUrl } from '../../utils'; 
 
-export function VehicleListPage () {
+export function PlanetListPage () {
     const [searchParam,setSearchParam ] = useSearchParams();
       const pageNo = searchParam.get('page') || 1;
       const search = searchParam.get('search') || '';
