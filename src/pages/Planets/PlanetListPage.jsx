@@ -8,7 +8,7 @@ export function VehicleListPage () {
       const search = searchParam.get('search') || '';
 
     const { data, isLoading, error, isError } = useQuery({
-        queryKey:['vehicles/list', search, pageNo], 
+        queryKey:['planets/list', search, pageNo], 
         queryFn: async() => { 
             const res = await fetch(`https://swapi.dev/api/planets/?page=${pageNo}&search=${search}`);
 
