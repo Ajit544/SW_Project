@@ -30,7 +30,6 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <PlanetListPage />,
-            loader: planetListLoader
           },
          /* {
             path: ':id',
