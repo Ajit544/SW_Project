@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <RootPage />,
     children: [
-      /*{
+      {
         path: 'planets',
         element: <Outlet />,
         children: [
@@ -32,13 +32,13 @@ const router = createBrowserRouter([
             element: <PlanetListPage />,
             loader: planetListLoader
           },
-          {
+         /* {
             path: ':id',
             element: <PlanetDetailsPage />,
             loader: planetIdLoader
-          }
+          }*/
         ]
-      },*/
+      },
       {
         path: 'people',
         element: <Outlet />,
