@@ -8,7 +8,7 @@ export const RootPage = () => {
       {/* Side Bar */}
       <div className="sidebar">
         <div className="sidebar-header">
-          <h1>Star Wars</h1>
+          <h1>Star_Wars</h1>
         </div>
         <div className="sidebar-content">
           <ul>
