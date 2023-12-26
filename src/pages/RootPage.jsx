@@ -17,7 +17,7 @@ export const RootPage = () => {
                 to="/planets"
                 className={({ isActive }) => (isActive ? 'active' : '')}
               >
-                Planets
+                Planet
               </NavLink>
             </li>
 
