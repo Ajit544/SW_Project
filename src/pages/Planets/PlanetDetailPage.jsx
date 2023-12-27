@@ -1,12 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
 
-export function PlanetListDetailPage(){
+export function PlanetDetailPage(){
     const { id = '1'} = useParams();
     const { data, isLoading, error, isError } = useQuery({
         queryKey: ['planet/details', id],
         queryFn: async() => {
             const res = await fetch(`https://swapi.dev/api/planets/${id}`);
+
             if (res.ok) {
                 return res.json();
             }
@@ -21,7 +22,7 @@ export function PlanetListDetailPage(){
             style={{
                 height: '100%',
                 display: 'flex',
-                alignItems: 'center',
+                alignItem: 'center',
                 justifyContent: 'center'
             }}
             >
@@ -36,6 +37,7 @@ export function PlanetListDetailPage(){
                     height: '100',
                     display: 'flex',
                     alignItems: 'center',
+                    justifyContent: 'center'
                 }}
                 >
                     <p>{String(error)}</p>

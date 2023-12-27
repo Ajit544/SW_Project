@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
 import { PlanetListPage } from './pages/Planets/PlanetListPage';
-//import { PlanetDetailsPage } from './pages/planets/PlanetDetails';
+import { PlanetDetailPage } from './pages/planets/PlanetDetailPage';
 import { RootPage } from './pages/RootPage';
 import { PeopleDetailsPage } from './pages/people/PeopleDetails';
 import { PeopleListPage } from './pages/people/PeopleList';
@@ -31,12 +31,13 @@ const router = createBrowserRouter([
             index: true,
             element: <PlanetListPage />,
           },
-         /* {
+         {
             path: ':id',
-            element: <PlanetDetailsPage />,
-            loader: planetIdLoader
-          }*/
+            element: <PlanetDetailPage />,
+          
+         }
         ]
+
       },
       {
         path: 'people',
