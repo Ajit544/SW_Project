@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
 import { PlanetListPage } from './pages/Planets/PlanetListPage';
-import { PlanetDetailPage } from './pages/planets/PlanetDetailPage';
+import { PlanetDetailPage } from './pages/Planets/PlanetDetailPage';
 import { RootPage } from './pages/RootPage';
 import { PeopleDetailsPage } from './pages/people/PeopleDetails';
 import { PeopleListPage } from './pages/people/PeopleList';
