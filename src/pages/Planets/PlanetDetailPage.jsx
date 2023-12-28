@@ -51,6 +51,12 @@ export function PlanetDetailPage(){
             <h3>{data.name}</h3>
             <p>Diameter: {data.diameter}</p>
             <p>Rotation_period: {data.rotation_period}</p>
+            <p>orbital_period: {data.orbital_period}</p>
+            <p>gravity: {data.gravity}</p>
+            <p>population:{data.population}</p>
+            <p>climate: {data.climate}</p>
+            <p>terrain: {data.terrain}</p>
+            <p>surface_water: {data.surface_water}</p>
 
         </div>
     );
