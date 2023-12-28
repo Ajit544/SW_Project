@@ -57,6 +57,11 @@ export function PlanetDetailPage(){
             <p>climate: {data.climate}</p>
             <p>terrain: {data.terrain}</p>
             <p>surface_water: {data.surface_water}</p>
+            <p>residents: {data.residents}</p>
+            <p>films: {data.films}</p>
+            <p>url: {data.url}</p>
+            <p>created : {data.created}</p>
+            <p>edited : {data.edited }</p>
 
         </div>
     );
